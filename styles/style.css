@@ -1,0 +1,183 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* HOME PAGE */
+.wrapper {
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #008cba;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-create {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar-brand:hover,
+.navbar-create:hover {
+    color: #fff;
+}
+
+/* CARD (HOME PAGE) */
+.card {
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+}
+
+.card-title {
+    color: #027ad6;
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+.card-button {
+    width: 140px;
+    height: 50px;
+    border-radius: 3px;
+    color: #fff;
+    background: #027ad6;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    border-style: none;
+    pointer-events: none;
+}
+
+.card-buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+/* NEW & EDIT CARD PAGE */
+.form-container {
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.form {
+    font-size: 25px;
+}
+
+.input-title {
+    padding: 5px;
+    font-size: 25px;
+    width: 500px;
+}
+
+.input-description {
+    padding: 5px;
+    font-size: 20px;
+    width: 500px;
+    max-width: 500px;
+    min-width: 500px;
+    height: 200px;
+}
+
+.form-label {
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+}
+
+.form-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    color: #fff;
+    background: #027ad6;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    border-style: none;
+}
+
+/* VIEW NOTE PAGE */
+.note-container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.single-note-delete {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    color: #fff;
+    background: red;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+
+.single-note-description {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* LOADING SCREEN STYLING */
+.loader--container {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader--spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: rgb(163, 163, 163) transparent rgb(163, 163, 163) transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
