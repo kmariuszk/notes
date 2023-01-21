@@ -6,9 +6,11 @@ Application created with Next.js and MongoDB. Built in educational purposes (how
 Allows user to create, edit, view and delete notes.
 
 ## Overview
-[homepage](./screenshots/homepage.png)
-[create-new-note](./screenshots/create-new-note.png)
-[view-note](./screenshots/view-note.png)
+![homepage](./screenshots/homepage.png)
+
+![create-new-note](./screenshots/create-new-note.png)
+
+![view-note](./screenshots/view-note.png)
 
 ## Available scripts
 
